@@ -127,15 +127,13 @@ body {
 
 @media screen and (max-width: 500px) {
   #login1{
-    width: 80;
+    width: 80%;
     display: flex;
     justify-content: center;
-    margin-right: 1rem;
-    margin-left: 1rem;
+    align-items: center;
     font-size: 25px;
-   
+    height: 400px;
   }
-
   .cadastro{
     width: 200;
     display: flex;
@@ -154,20 +152,49 @@ body {
   }
 
 }
-@media screen and (max-width: 375px) {
+
+@media screen and (max-width: 425px) {
   #login1{
-    width: 70;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    height: 550px;
+  }
+  .cadastro{
+    width: 200;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+
+  .card-content-area label{
+    font-size: 23px;
+  }
+
+  .card-footer a{
+    font-size: 18px;
+  }
+
+}
+@media screen and (max-width: 325px) {
+  #login1{
+    width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin-top: 5rem;
-    margin-right: 2rem;
-    margin-left: 2rem;
+    height: 450px;
+    margin-top: 3rem;
    
   }
 
 }
+
 
 @media screen and (min-width: 768px) {
   #login1{
@@ -176,8 +203,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 5rem;
-    font-size: 23px;
-    
+    font-size: 18px;
   }
   .card-content-area label{
     font-size: 23px;
@@ -191,6 +217,7 @@ body {
     font-size: 18px;
   }
 }
+
 @media screen and (min-width: 1024px) {
   #login1{
     width: 100%;
@@ -198,11 +225,11 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 5rem;
-    font-size: 25px;
+    font-size: 23px;
     
   }
   .card-content-area label{
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .card-content-area input{
