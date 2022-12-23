@@ -1,0 +1,43 @@
+
+body {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #454d6b;
+}
+
+
+#login1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin-top: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+#corh1login {
+  font-size: 2em;
+    font-family:'open_sansbold';
+    width:100%;
+    border-bottom:1px #e8e8e8 solid;
+    padding-bottom:10px;
+    margin-bottom:10px;
+    background: linear-gradient(to right, #00ccd5 10%, #00131c 15%);
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#esqueceusenha{
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem;
+  color: white;
+}
+
+
+/* FIM LOGIN */
+
