@@ -111,4 +111,105 @@ body {
   margin: 8px 0 0 1px;
 }
 
+#button_login{
+  cursor: pointer;
+}
+#button_esqueceu{
+  cursor: pointer;
+}
+#button_user{
+  cursor: pointer;
+}
+
 /* FIM CADASTRO */
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 500px) {
+  #login1{
+    width: 80;
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-size: 25px;
+   
+  }
+
+  .cadastro{
+    width: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+
+  .card-content-area label{
+    font-size: 23px;
+  }
+
+  .card-footer a{
+    font-size: 18px;
+  }
+
+}
+@media screen and (max-width: 375px) {
+  #login1{
+    width: 70;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+   
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  #login1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    font-size: 23px;
+    
+  }
+  .card-content-area label{
+    font-size: 23px;
+  }
+
+  .card-content-area input{
+    font-size: 18px;
+  }
+
+  .card-footer a{
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #login1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    font-size: 25px;
+    
+  }
+  .card-content-area label{
+    font-size: 20px;
+  }
+
+  .card-content-area input{
+    font-size: 16px;
+  }
+
+  .card-footer a{
+    font-size: 16px;
+  }
+}
