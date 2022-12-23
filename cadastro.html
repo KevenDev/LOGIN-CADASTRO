@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./CSS/style.css">
+  <title>Página de Cadastro</title>
+</head>
+
+<body>
+
+<div id="cadastro">
+
+  <form id="form" class="card">
+    <div class="card-header">
+      <h2>Cadastro de Usuário</h2> 
+    </div>
+
+    <div class="card-content">
+
+      <div class="card-content-area">
+        <label for="nome">Nome Completo</label>
+        <input type="text" name="nome" id="nome" placeholder="Insira seu nome" class="inputs required" oninput="nameValidate()">
+        <span class="span-required"> Nome deve ter no mínimo 3 caracteres </span>
+      </div>
+
+      <div class="card-content-area">
+        <label for="cpf"> CPF </label>
+        <input type="text" name="cpf" placeholder="Insira seu CPF" id="cpf" oninput="cpfValidate(), this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" / inputmode="number" minlength="11" maxlength="11" class="inputs required">
+        <span class="span-required">  Digite um CPF válido </span>
+      </div>
+
+      <div class="card-content-area">
+        <label for="usuario">Usuário</label>
+        <input type="text" name="usuario" id="usuario" oninput="userValidate()" placeholder="Insira seu usuário" class="inputs required">
+        <span class="span-required"> Campo obrigatório </span>
+      </div>
+
+      <div class="card-content-area">
+        <label for="password">Senha</label>
+        <input type="password" name="senha" id="password" oninput="passwordValidate()" placeholder="Insira sua senha" class="inputs required">
+        <span class="span-required"> Digite uma senha com no mínimo 8 caracteres <br> Deve conter pelo menos uma letra maiúscula </span>
+      
+      </div>
+
+      <div class="card-content-area">
+        <label for="confirmasenha">Confirme a sua Senha</label>
+        <input type="password" name="confirmasenha" id="confirmasenha" placeholder="Repita sua senha" class="inputs required" oninput="comparePassword()">
+        <span class="span-required"> Suas senhas devem ser iguais </span>
+      </div>
+
+      <div class="card-content-area">
+        <label for="email">Email</label>
+        <input type="email" oninput="emailValidate()" name="email" id="email" placeholder="Insira seu email" class="inputs required">
+        <span class="span-required"> Digite um e-mail válido </span>
+      </div>
+
+      <div class="card-content-area">
+        <label for="data">Data de nascimento</label>
+        <input type="date" name="nascimento" id="nascimento" class="inputs required" oninput="nascimentoValidate()" >
+        <span class="span-required">  Campo obrigatório  </span>
+      </div>
+
+      <div class="card-content-area">
+        <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone" id="telefone" placeholder="Insira seu telefone" oninput=" telefoneValidate() , this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" / inputmode="number" minlength="11" maxlength="11" class="inputs required">
+        <span class="span-required">  Campo obrigatório </span>
+      </div>
+
+
+    <div class="card-footer">
+      <button id="button_user" class="submit"> Cadastrar </button>
+    </div>
+    <a href="cadastro.html"> <p id="limpar_user"> Limpar Dados</p> </a>
+  </div>
+    </form>
+</div> 
+<script src="JS/validauser.js"></script>
+</body>
+</html>
