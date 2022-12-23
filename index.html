@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Faça seu Login</title>
+</head>
+<body>
+  
+  
+  <div id="login1">
+    <form id="form_login" class="card">
+      
+      <div class="card-header">
+        <h2>Login</h2>
+      </div>
+      
+      <div class="card-content">
+        
+        <div class="card-content-area">
+          <label type="usuario">Usuário</label>
+          <input type="text" oninput="userValidate()" name="usuario" id="usuario" placeholder="Insira seu usuário" class="inputs required">
+          <span class="span-required"> Usuário inválido </span>
+      </div>
+      
+      <div class="card-content-area">
+        <label for="password">Senha</label> 
+        <input type="password" name="senha" id="password" placeholder="Insira sua senha" class="inputs required" oninput="passwordValidate()">
+        <span class="span-required"> Senha inválida </span>
+      </div>
+      
+    </div>
+    
+    <div class="card-footer">
+        <button id="button_login" value="Login" class="submit"> Login </button>
+        <div id="esqueceusenha">
+            <a href="esqueceu_senha.html">  <p> Esqueceu a Senha </p> </a>      
+            <a href="cadastro.html"> <p> Cadastre-se </p> </a>
+          </div>
+        </div>  
+      </form>
+    </div>
+  </body>
+  </html>
